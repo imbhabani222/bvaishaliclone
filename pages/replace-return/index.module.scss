@@ -1,0 +1,56 @@
+.container {
+  width: 90%;
+  margin: auto;
+  .page_title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253d4e;
+  }
+  //left
+  .left_section_wrapper {
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    .left_content_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 10px;
+      .product_name {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+      }
+      .varient_wrapper {
+        display: flex;
+        column-gap: 20px;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+  //right
+  .right_section {
+    border: 1px solid red;
+    padding: 20px;
+    .type_heading {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #253d4e;
+    }
+  }
+}

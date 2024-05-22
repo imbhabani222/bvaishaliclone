@@ -1,0 +1,83 @@
+.breadcrumb_div {
+  height: 58px;
+  display: flex;
+  //   justify-content: center;
+  align-items: center;
+}
+.breadcrumb_container {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.title_container h3 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #333333;
+}
+.price {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  color: #333333;
+}
+.label,
+.label_xl,
+.label_xxl {
+  font-family: Josefin Sans;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 10px;
+  column-gap: 25px;
+}
+.color_label,
+.color_label_xl,
+.color_label_xxl {
+  font-family: Josefin Sans;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 10px;
+}
+.color_label {
+  background-color: #cd3030;
+}
+.color_label_xl {
+  background-color: #1a21d4;
+}
+.color_label_xxl {
+  background-color: #f1db16;
+}
+.button_group {
+  column-gap: 10px;
+  width: 45px;
+  height: 45px;
+}
+.buttons {
+  display: flex;
+  column-gap: 20px;
+}
+.btn_txt {
+  display: flex;
+  column-gap: 20px;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+}

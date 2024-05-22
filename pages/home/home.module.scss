@@ -1,0 +1,26 @@
+@import "../../commonStyles/colors.module.scss";
+@import "../../commonStyles/media-queries.module.scss";
+
+.container {
+  max-width: fit-content;
+
+  // padding: 0 3.2em;
+  @include respond(md) {
+    padding: 0 2em;
+  }
+
+  @include respond(sm) {
+    padding: 0 1em;
+  }
+}
+
+.super_container {
+  // margin: 1rem 3rem;
+  margin: 25px 0;
+}
+
+@media (max-width: 768px) {
+  .super_container {
+    // margin: 1rem 1.5rem;
+  }
+}

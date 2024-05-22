@@ -1,0 +1,41 @@
+.container {
+  width: 85%;
+  margin: auto;
+  .bread_crumb {
+    padding: 2% 1%;
+    background-color: #fbfbfb;
+    border: 0.4px solid #e2e2e2;
+    margin-bottom: 2%;
+  }
+  .odd_row {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  .even_row {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+    margin-top: 2%;
+  }
+  .description_wrapper {
+    // padding: 0 2%;
+    .heading {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .paragraph {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-top: 1%;
+    }
+  }
+}

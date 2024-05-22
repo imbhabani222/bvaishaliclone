@@ -1,0 +1,211 @@
+@import "../../../commonStyles/colors.module.scss";
+@import "../../../commonStyles/media-queries.module.scss";
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  margin: none;
+  margin-top: 16px;
+  min-width: 20px;
+  margin-left: 0 auto;
+  width: 100vw;
+  max-width: 1730px;
+  margin-right: 0 auto;
+
+
+  .card{
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+
+  .cardContainer {
+    // display: flex;
+    // border: none;
+    // height: 100%;
+    // width: 100%;
+  }
+
+  .top_banner {
+    // position: relative;
+    // height: 900px;
+    // display: flex !important;
+    // justify-content: center !important;
+    // align-items: center !important;
+    // font-size: 30px;
+    // font-family: "Redressed", cursive;
+    // color: white;
+    // background-color: #fff;
+
+    // cursor: pointer;
+    //border: 5px dashed red;
+    // @include respond(sm) {
+    //   height: 400px;
+    //   // aspect-ratio: 16/9;
+    // }
+
+    // .image {
+    //   background-color: #fff;
+    //   width: 100%;
+    //   height: 100%;
+    //   // margin-top: 10px;
+    //   //background-size: cover;
+    //   object-fit: fill;
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
+
+    //   @include respond(sm) {
+    //     object-fit: fill;
+    //     // aspect-ratio: 16/9 !important;
+    //   }
+    // }
+
+    // .textonbanner {
+    //   position: absolute;
+    //   left: 5%;
+    //   color: #fff;
+    // }
+
+    // .textonbanner h2 {
+    //   color: #fff;
+    //   font-family: "Playfair Display", serif;
+    //   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    //   font-size: 60px;
+    //   line-height: 60px;
+    // }
+
+    //   .textonbanner p {
+    //     color: #fff;
+    //     font-family: "Josefin Sans", sans-serif;
+    //     font-size: 18px;
+    //     line-height: 30px;
+
+    //     @include respond(sm) {}
+    //   }
+    // }
+
+    // .top_banner span {
+    //   max-height: 100%;
+    //   height: 100% !important;
+    //   background: #000;
+    //   width: 100% !important;
+
+    //   @include respond(sm) {
+    //     // height: 100px !important;
+    //   }
+
+    //   .top_banner span img {
+    //     object-fit: fill;
+    //     object-position: top;
+    //   }
+  }
+
+  // .left_align {
+  //   position: absolute;
+  //   display: flex;
+  //   justify-content: center;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   top: 50%;
+  //   left: 250px;
+  //   transform: translate(-50%, -50%);
+  //   color: black;
+  //   z-index: 1;
+  //   width: 30%;
+
+  //   @include respond(sm) {
+  //     width: 85%;
+  //     left: 190px;
+  //   }
+  // }
+
+  // .right_align {
+  //   position: absolute;
+  //   display: flex;
+  //   justify-content: center;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   top: 50%;
+  //   right: 0;
+  //   transform: translate(-10%, -50%);
+  //   color: black;
+  //   z-index: 1;
+  //   width: 30%;
+
+  //   @include respond(sm) {
+  //     width: 85%;
+  //   }
+  // }
+
+  // .first_line {
+  //   font-family: "Josefin Sans", sans-serif;
+  //   font-size: 20px;
+  //   font-weight: 400;
+  //   line-height: 23px;
+  //   letter-spacing: -0.01em;
+  //   text-align: center;
+  //   color: $theme-clr;
+  // }
+
+  // .second_line {
+  //   font-family: "Redressed", cursive;
+  //   font-size: 35px;
+  //   font-weight: 400;
+  //   text-align: center;
+  //   color: #ffffff;
+  // }
+
+  // .banner_action {
+  //   width: fit-content;
+  //   background-color: $theme-clr;
+  //   font-family: "Josefin Sans", sans-serif;
+  //   font-size: 16px;
+  //   font-weight: 600;
+  //   line-height: 19px;
+  //   letter-spacing: 0em;
+  //   text-align: left;
+  //   padding: 5px 20px;
+  //   border-radius: 30px;
+  //   border: none;
+  //   color: white;
+  //   cursor: pointer;
+  // }
+
+  :global {
+
+    .slick-prev:before,
+    .slick-next:before {
+      display: none !important;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      display: none !important;
+    }
+
+    .slick-slide img {
+      @include respond(sm) {
+        height: 250px;
+        // object-fit: contain;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   .content {
+//     top: 50%;
+//     left: 3%;
+//     min-height: 60%;
+
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .content {
+//     top: 40%;
+//     left: 2%;
+//     min-height: 70%;
+
+//   }
+// }

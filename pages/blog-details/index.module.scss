@@ -1,0 +1,194 @@
+@import "../../commonStyles/colors.module.scss";
+@import "../../commonStyles/media-queries.module.scss";
+.container {
+  width: 90%;
+  margin: auto;
+  .bread_crumb {
+    padding: 2% 1%;
+    background-color: #fbfbfb;
+    border: 0.4px solid #e2e2e2;
+  }
+  .title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 2%;
+  }
+  .heading_row {
+    margin-top: 2%;
+    .heading {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: $theme-clr;
+      text-transform: uppercase;
+    }
+
+    .date {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+      opacity: 0.8;
+    }
+    .comments {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+      opacity: 0.8;
+    }
+    span {
+      padding-left: 5px;
+    }
+  }
+  .img1 {
+    margin-top: 20px;
+  }
+  .para {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 0.8;
+    margin-top: 20px;
+  }
+  .highlighted_para {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 4%;
+    border-left: 2px solid $theme-clr;
+    margin-top: 20px;
+  }
+  .h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .img2 {
+    margin-top: 20px;
+  }
+  .guidens_points {
+    display: flex;
+    column-gap: 5px;
+    margin-top: 2%;
+    .dot {
+      color: black;
+    }
+  }
+  .blog_list_right_side {
+    margin-top: 10px;
+    .latest_blogs_wrapper {
+      border: 1px solid #e2e2e2;
+      padding: 4%;
+      .latest_blog_card {
+        margin-top: 2%;
+        cursor: pointer;
+      }
+      .heading {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+      .title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $theme-clr;
+        text-transform: uppercase;
+      }
+      .description {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        opacity: 0.8;
+        display: flex;
+      }
+    }
+    .blog_categories_wrapper {
+      border: 1px solid #e2e2e2;
+      margin-top: 5%;
+      padding: 4%;
+      .heading {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+      .text {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        border-bottom: 1px solid #e2e2e2;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        cursor: pointer;
+      }
+    }
+    .blog_tags_wrapper {
+      border: 1px solid #e2e2e2;
+      margin-top: 5%;
+      padding: 4%;
+      .heading {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+      .blog_tag_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .blog_tag {
+          border: 1px solid $theme-clr;
+          color: $theme-clr;
+          padding: 5px 10px;
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0px;
+          text-align: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

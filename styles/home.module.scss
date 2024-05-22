@@ -1,0 +1,6 @@
+@import "../commonStyles/colors.module.scss";
+@import "../commonStyles/media-queries.module.scss";
+.container {
+  padding: 0 50px;
+  @include respond(sm);
+}

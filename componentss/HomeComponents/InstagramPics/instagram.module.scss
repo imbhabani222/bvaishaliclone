@@ -1,0 +1,41 @@
+.container {
+  width: 80%;
+  margin: 3rem auto; //remove 20 after footer insert
+  .title {
+    font-family: "arquitecta", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .fallow_text {
+    font-family: "arquitecta", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .card_wrapper {
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .fallow_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    button {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      background-color: white;
+      padding: 5px 10px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+  }
+}

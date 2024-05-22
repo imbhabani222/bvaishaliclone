@@ -1,0 +1,26 @@
+# Block all crawlers for /private_routes
+User-agent: *
+Disallow: /my-address
+Disallow: /my-address
+Disallow: /my-orders
+Disallow: /order-details
+Disallow: /login-modal
+Disallow: /address
+Disallow: /invoice
+Disallow: /order-success
+Disallow: /payment-pending
+Disallow: /payment-failed
+Disallow: /payment-progress
+Disallow: /payment-success
+Disallow: /whishlist
+
+# Allow crawlers
+User-agent: *
+Allow: /
+Allow: /recommended-products
+Allow: /categorie-listing
+Allow: /explore-products
+Allow: /my-cart
+Allow: /product-list
+Allow: /product-details
+Allow: /search-products

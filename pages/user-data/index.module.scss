@@ -1,0 +1,56 @@
+@import "../../commonStyles/colors.module.scss";
+@import "../../commonStyles/media-queries.module.scss";
+.signup_wrapper {
+  //   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 10px;
+  Input {
+    // border: none;
+    // border-bottom: 1px solid black;
+    border-radius: 0px;
+  }
+}
+.signup_button_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  button {
+    background-color: $theme-clr;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+.login_text {
+  display: flex;
+  justify-content: center;
+  b {
+    padding-left: 5px;
+    cursor: pointer;
+  }
+}
+.dsbl_btn {
+  border: 1px solid red;
+  padding: 5px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: no-drop;
+  border-radius: 5px;
+}
+.otp_img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.login_title {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  // line-height: 21px;
+  letter-spacing: 0em;
+}

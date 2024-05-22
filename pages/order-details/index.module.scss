@@ -1,0 +1,553 @@
+@import "../../commonStyles/colors.module.scss";
+@import "../../commonStyles/media-queries.module.scss";
+.container {
+  width: 93%;
+  margin: auto;
+  .breadcrumb_wrapper {
+    font-family: Josefin Sans;
+    background-color: white;
+    padding: 15px 10px;
+    margin: 0px auto 20px;
+    @include respond(sm) {
+      margin: 0px auto 0px;
+    }
+    .home_bread_crumb {
+      opacity: 1;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .keyName {
+    text-transform: capitalize;
+  }
+  .details_container {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 0px;
+    .page_title {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #253d4e;
+    }
+    .order_status_top_row {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      @include respond(sm) {
+        // border: 2px solid green;
+      }
+      .order_id_text {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+        @include respond(sm) {
+          font-size: 13px;
+        }
+      }
+      .order_date {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+        opacity: 0.5;
+      }
+      .order_status_wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        justify-content: flex-end;
+        @include respond(sm) {
+          justify-content: flex-start;
+          margin: -15px 0 10px 0;
+        }
+        .order_status {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          letter-spacing: 0.4000000059604645px;
+          text-align: center;
+          padding: 10px 40px;
+          border-radius: 2px;
+          color: white;
+          @include respond(sm) {
+            width: 100%;
+          }
+        }
+        .order_action {
+          border: 1px solid $theme-clr;
+          border-radius: 2px;
+          background-color: white;
+          display: flex;
+          padding: 15px 5px;
+          line-height: 16px;
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
+    }
+    .order_details_wrapper {
+      display: flex;
+      align-items: center;
+      // margin-top: 20px;
+      .order_img_wrapper {
+        border: 1px solid #e2e2e2;
+        padding: 10px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card_title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+        text-transform: capitalize;
+        word-break: break-all;
+      }
+      .d {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+        text-transform: capitalize;
+        @include respond(sm) {
+          margin-top: 20px;
+          color: red;
+        }
+      }
+      .d_s_line {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+        text-transform: capitalize;
+        margin-top: 7px;
+      }
+      .order_atr_title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+      }
+      .order_atr_value {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+        padding-left: 5px;
+      }
+    }
+    .stepper_wrapper {
+      margin-top: 40px;
+      max-width: 100%;
+      overflow-x: hidden;
+      .order_cancel_reason {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #fd334e;
+        width: 92%;
+        margin: 10px auto 0px;
+      }
+      :global {
+        .ant-steps-item-description {
+          font-size: 8px !important;
+        }
+        .ant-steps-label-vertical .ant-steps-item-title {
+          color: #253d4e !important;
+          font-family: "Josefin Sans", sans-serif !important;
+          font-size: 12px !important;
+          font-weight: 400 !important;
+          line-height: 14px !important;
+          letter-spacing: 0em !important;
+          text-align: left !important;
+        }
+      }
+    }
+    .order_address_wrapper {
+      background-color: #fafafa;
+      margin-top: 30px;
+      padding: 15px;
+      .title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+      }
+      .type {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+      }
+      .details {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+      }
+    }
+    .payment_mode_wrapper {
+      background-color: #fafafa;
+      margin-top: 20px;
+      padding: 15px;
+      .payment_mode_title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+      }
+      .payment_mode_option {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+      }
+      .payment_mode_info {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+      }
+      .payment_mode_info_rows {
+        display: flex;
+        row-gap: 10px;
+        margin-top: 5px;
+        justify-content: space-between;
+        .payment_mode_info_rows {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .payment_mode_info_rows span {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: right;
+          color: #253d4e;
+        }
+      }
+    }
+  }
+}
+.other_d {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #253d4e;
+  margin: 20px 0;
+}
+.other_card_title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #253d4e;
+  margin: 20px 0;
+  word-break: break-all;
+}
+.other_cards_container {
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  .order_card_wrapper {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    // margin-top: 10px;
+    // transition: all 0.3s;
+    padding: 2% 2% 2% 0;
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-animation-name: animatationname;
+      animation-name: animatationname;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      // padding: 2%;
+      // border: none;
+    }
+    .order_card_top_row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      .order_id_text {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+      }
+      .order_date {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #253d4e;
+        opacity: 0.5;
+      }
+      .order_status {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.4000000059604645px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 2px;
+        color: white;
+      }
+    }
+    .order_details_wrapper {
+      display: flex;
+      align-items: center;
+      .order_img_wrapper {
+        border: 1px solid #e2e2e2;
+        padding: 10px;
+        border-radius: 2px;
+      }
+      .card_title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+        word-break: break-all;
+      }
+      .order_atr_title {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+      }
+      .order_atr_value {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #253d4e;
+        padding-left: 5px;
+      }
+    }
+    :global {
+      .ant-divider-horizontal {
+        margin: 10px 0 !important;
+      }
+    }
+  }
+}
+.action_modal_text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  // margin-top: 10px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #253d4e;
+  cursor: pointer;
+  font-weight: bold;
+  padding-inline: 3px;
+  transition: all 0.1s;
+}
+// .action_modal_text:hover {
+//   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+// }
+.cancel_option_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  .cancel_option_wrapper_label {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253d4e;
+    margin-bottom: 5px;
+  }
+}
+.cancel_option_submit_btn {
+  // border: ;
+  background-color: $theme-clr;
+  color: white;
+}
+.cancel_option_submit_btn:hover {
+  background-color: $theme-clr;
+  color: white;
+}
+.other_order_status_wrapper {
+  display: flex;
+  column-gap: 10px;
+  justify-content: flex-end;
+  @include respond(sm) {
+    justify-content: flex-start;
+    margin-top: 3px;
+  }
+  .other_order_status {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: white;
+    width: fit-content;
+    width: 100%;
+  }
+  .arrow {
+    @include respond(sm) {
+      display: none;
+    }
+  }
+}
+.drawer_mobile_show {
+  display: none;
+  @include respond(sm) {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 10px auto;
+  }
+  Button {
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #253d4e;
+    padding: 5px;
+  }
+}
+.mobile_menu {
+  display: none;
+  @include respond(sm) {
+    display: block;
+  }
+}
+.desktop_menu {
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.close_icon span {
+  top: -4px !important;
+  right: -12px !important;
+}
+.tracking_wrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  @include respond(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.tracking_id {
+  // font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  font-weight: 400;
+  // line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #253d4e;
+  margin-top: 8px;
+}
+.cancel_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-top: -30px;
+}
+.tracking_id_view_more {
+  // font-family: 'Playfair Display', serif;
+  font-size: 12px;
+  font-weight: 400;
+  // line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #01c0cc;
+  margin-top: 9px;
+  cursor: pointer;
+  max-width: fit-content;
+  padding: 0 10px;
+}

@@ -1,0 +1,40 @@
+.container {
+  width: 93%;
+  margin: 20px auto;
+  .header {
+    font-style: Roboto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f7f7;
+    font-weight: 400;
+    border-radius: 2px;
+    opacity: 0.8;
+  }
+}
+.mobile_see_all {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  // border-bottom: 0.5px solid #d9d9d9;
+  padding: 1% 0;
+}
+.load_spinner {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: none;
+}
+.view_more_btn {
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+  padding: 10px 40px;
+  background-color: #01c0cc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}

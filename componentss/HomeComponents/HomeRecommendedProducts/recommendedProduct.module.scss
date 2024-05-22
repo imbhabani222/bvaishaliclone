@@ -1,0 +1,182 @@
+@import "../../../commonStyles/colors.module.scss";
+@import "../../../commonStyles/media-queries.module.scss";
+
+.container {
+  width: 93%;
+  margin: 5% auto 2%;
+  padding: 1rem;
+  max-height: 900;
+  padding: 30px;
+
+  @include respond(sm) {
+    width: 100%;
+    // margin: 8% auto 0;
+  }
+
+  .heading {
+    height: 100%;
+    width: 100%;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 1rem;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 35.22px;
+      color: #000000;
+      text-transform: uppercase;
+    }
+  }
+
+  .top_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+
+    .top_row_left_section {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    .top_row_right_section {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $theme-clr;
+    }
+  }
+
+  .sub_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .heading_wrapper {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+
+      .arrows {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .related_title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253d4e;
+    margin: 10px 0 20px;
+
+    @include respond(sm) {
+      font-size: 17px;
+      margin: 10px 0;
+    }
+  }
+
+  .related_see_all_title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $theme-clr;
+    cursor: pointer;
+
+    @include respond(sm) {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #01c0cc;
+      cursor: pointer;
+      border: 1px solid #76e5ff;
+      padding: 2px 10px;
+      border-radius: 13px;
+      background: aliceblue;
+      display: none;
+    }
+  }
+}
+
+.window_view {
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.mobile_view {
+  display: none;
+
+  @include respond(sm) {
+    display: flex;
+  }
+}
+
+.arrows {
+  cursor: pointer;
+
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.mobile_see_all {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 0.5px solid #d9d9d9;
+  padding-bottom: 5%;
+}
+
+.load_spinner {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: none;
+}
+
+.view_more_btn {
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+  padding: 10px 40px;
+  background-color: #01c0cc;
+  color: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sub_container {
+    .heading h2 {
+      font-size: 0.9rem;
+      align-items: start;
+    }
+
+  }
+
+
+
+}

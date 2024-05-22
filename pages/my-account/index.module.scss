@@ -1,0 +1,84 @@
+@import "../../commonStyles/media-queries.module.scss";
+.main_container {
+  background-color: #fff;
+  padding-bottom:100px;
+  .breadcrumb_wrapper {
+    font-family: Josefin Sans;
+    font-size: 14px;
+    width: 93%;
+    // background-color: white;
+    padding: 15px 10px;
+    margin: 0px auto 20px;
+    @include respond(sm) {
+      margin: 0px auto 20px;
+    }
+    // display: flex;
+    // flex-wrap: wrap;
+    :global{
+      .ant-breadcrumb-link{
+        font-family: Josefin Sans;
+font-size: 14px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:#000;
+      }
+    }
+    .home_bread_crumb {
+      opacity: 1;
+      cursor: pointer;
+      font-family: Josefin Sans;
+font-size: 14px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+color:#000;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .drawer_mobile_show {
+    display: none;
+    @include respond(sm) {
+      display: flex;
+      justify-content: flex-end;
+      width: 90%;
+      margin: 10px auto;
+    }
+    Button {
+      width: 100%;
+      font-family: Josefin Sans;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      color: #253d4e;
+      padding: 5px;
+    }
+  }
+  .container {
+    width: 93%;
+    //background-color: white;
+    margin: auto;
+        // margin-bottom: 100px;
+
+    .menu_items {
+    }
+    .menu {
+    }
+    .mobile_menu {
+      display: none;
+      @include respond(sm) {
+        display: block;
+      }
+    }
+    .desktop_menu {
+      @include respond(sm) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,401 @@
+@import "../../../commonStyles/colors.module.scss";
+@import "../../../commonStyles/media-queries.module.scss";
+
+.container {
+  width: 100%;
+  padding: 1rem !important;
+  min-height: 500px;
+
+  :global {
+
+    .slick-prev:before,
+    .slick-next:before {
+      display: none !important;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      display: none !important;
+    }
+  }
+}
+
+.top_row {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.wishlist_icon {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  gap: 5px;
+  z-index: 10;
+  font-size: 30px;
+  top: 10px;
+  right: 12px;
+  color: #e2e2e2;
+
+  .wish{
+    font-family: "arquitecta", Arial, sans-serif;
+  }
+}
+
+// .card_img {
+
+//   max-width: 100%;
+//   /* Ensure the image doesn't exceed its parent's width */
+//   max-height: 100%;
+//   /* Ensure the image doesn't exceed its parent's height */
+//   width: auto;
+//   /* Allow the image to scale down while maintaining aspect ratio */
+//   height: auto;
+//   /* Allow the image to scale down while maintaining aspect ratio */
+//   object-fit: contain;
+//   /*Ensure the entire image is visible without being cut off */
+
+// }
+
+.rating_point {
+  font-family: "arquitecta", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding-left: 5px;
+  opacity: 0.8;
+}
+
+.top_row_heading {
+  font-family: "arquitecta", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.top_row_see_all {
+  font-family: "arquitecta", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $theme-clr;
+  cursor: pointer;
+}
+
+.card {
+  transition: transform .3s; /* Animation */
+  border: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  border-radius: 3px;
+  position: relative;
+
+
+
+
+  @include respond(sm) {
+    max-width: none;
+    height: 280px;
+  }
+
+  @include respond(xl) {
+    margin-top: 0px;
+    height: 1000px;
+
+  }
+
+  .img_wrapper {
+    // margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    @include respond(sm) {
+      margin-top: 0px;
+    }
+
+    @include respond(xl) {
+      margin-top: 0px;
+      height: 100%;
+      width: 100%;
+    }
+
+
+  }
+
+  .img_wrapper span {
+    // width: 50vw !important;
+    // height: 40vh !important;
+    width: 100% !important;
+    height: 444px !important;
+
+    @include respond(sm) {
+      height: 280px !important;
+    }
+  }
+
+  .traingle {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    right: 14%;
+    position: absolute;
+    z-index: 1000;
+    transform: rotate(45deg);
+  }
+
+  .offer_percentage {
+    position: absolute;
+    right: 0;
+    background-color: #fd334e;
+    color: white;
+    padding: 0 5px 0 15px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.01);  
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 4px;
+  animation: pinchZoom 0.5s ease infinite; 
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card_title {
+  margin-top: 20px;
+  font-family: "arquitecta", Arial, sans-serif;
+  text-align: left;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .25px;
+  line-height: 20px;    
+  color: #000000;
+}
+
+.card_price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -7px;
+}
+
+.card_price_left {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.card_discount_price {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  // letter-spacing: 0em;
+  text-align: left;
+  color: $theme-clr;
+
+  @include respond(sm) {
+    font-size: 12px;
+  }
+}
+
+.card_actual_price {
+    font-family: "arquitecta", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  // letter-spacing: 0em;
+  text-align: left;
+  color: #253d4e;
+  opacity: 0.5;
+
+  @include respond(sm) {
+    font-size: 12px;
+    display: flex;
+  }
+}
+
+.price_off {
+  font-family: "arquitecta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: default;
+  color: #979797;
+  font-weight: 700;
+
+  @include respond(sm) {
+    font-size: 8px;
+  }
+}
+
+.product_status {
+  font-family: "arquitecta", Arial, sans-serif;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: $theme-clr;
+
+  @include respond(sm) {
+    text-align: left;
+    display: none;
+  }
+}
+
+.add_to_card_btn {
+  font-family: "arquitecta", Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 500;
+  // line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $theme-clr;
+  // border: 0.5px solid $theme-clr;
+  background-color: white;
+  // padding: 13px;
+  cursor: pointer;
+  // display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  // background: $theme-clr;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+  @include respond(sm) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.disable_card_btn {
+  font-family: "arquitecta", Arial, sans-serif;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(153, 151, 151);
+  border: none;
+  background-color: #e2e2e2;
+  // padding: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  // background: $theme-clr;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  cursor: not-allowed;
+
+  @include respond(sm) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.add_to_card_btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.add_to_card_btn:hover {
+  border: none;
+  background-color: $theme-clr;
+  color: white;
+}
+
+.add_to_card_btn:hover:before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.add_to_card_btn1 {
+  font-family: "arquitecta", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $theme-clr;
+  border: 1px solid $theme-clr;
+  background-color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.wishlist_before:hover {}
+
+.mobile_stock_status {
+  display: none;
+
+  @include respond(sm) {
+    display: flex;
+    margin-top: -9px;
+  }
+}
+
+.floating_btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // padding: 10px 20px;
+  // background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .card_img img {
+    height: auto;
+    /* Reset height to maintain aspect ratio */
+  }
+}
+
+@media (min-width: 2000px) {
+  .card_img img {
+    height: auto;
+    /* Reset height to maintain aspect ratio */
+  }
+}

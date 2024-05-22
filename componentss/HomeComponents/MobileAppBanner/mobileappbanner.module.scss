@@ -1,0 +1,85 @@
+@import "../../../commonStyles/colors.module.scss";
+@import "../../../commonStyles/media-queries.module.scss";
+.container {
+  background-color: #eaeaea;
+  height: fit-content;
+  margin-top: 4%;
+  overflow: hidden;
+  .left_side {
+    padding: 2% 2% 2% 4%;
+    display: flex;
+    flex-direction: column;
+    .left_side_div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      @include respond(sm) {
+        width: 100%;
+      }
+    }
+    .input_wrapper {
+      display: flex;
+      background-color: $theme-clr;
+    }
+    .input_wrapper_btn {
+      width: 40%;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #ffffff;
+      background-color: $theme-clr;
+      border: none;
+    }
+    .availability {
+      display: flex;
+      justify-content: space-between;
+    }
+    .availability_flatform {
+      display: flex;
+      justify-content: space-between;
+    }
+    .availability_flatform img {
+      height: 40px;
+    }
+    .availability_one {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      color: #253d4e;
+    }
+    .availability_two {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: -0.01em;
+      text-align: left;
+      color: #253d4e;
+    }
+  }
+  .first_line {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  .second_line {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #253d4e;
+    opacity: 0.5;
+  }
+}

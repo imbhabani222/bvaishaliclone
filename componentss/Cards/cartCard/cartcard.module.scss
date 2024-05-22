@@ -1,0 +1,247 @@
+@import "../../../commonStyles/colors.module.scss";
+@import "../../../commonStyles/media-queries.module.scss";
+.cart_card {
+  border-top: 1px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 2%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  row-gap: 10px;
+  .card_img_wrapper {
+    display: flex;
+    justify-content: center;
+    .cart_img {
+      object-fit: fill;
+      border-radius: 2px !important;
+    }
+  }
+  .card_details_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+  }
+  .heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253d4e;
+    text-transform: capitalize;
+    word-break: break-all;
+  }
+  .size_color {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  s {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #253d4e;
+    opacity: 0.5;
+  }
+  .price_wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    .price {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #253d4e;
+    }
+    @include respond(sm) {
+      align-items: flex-start;
+    }
+  }
+  .qty_btn_wrapper {
+    display: flex;
+    align-items: center;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 12px;
+    column-gap: 5px;
+
+    .qty_btn {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      // border: 1px solid #e2e2e2;
+      border-radius: 10px;
+      background-color: white;
+      justify-content: space-between;
+      cursor: pointer;
+      width: 100px;
+      @include respond(sm) {
+        width: 120px;
+        font-weight: 500;
+      }
+    }
+  }
+  .qty_click_btn {
+    height: 24px;
+    width: 30px;
+    background: #dddddd;
+    border-radius: 4px;
+  }
+  .qty_click_btn:hover {
+    border: 1px solid #000000;
+    background: #000000;
+    color: #ffffff;
+  }
+  .qty_click_btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .qty_calc_btn {
+    height: 24px;
+    width: 41px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  .sub_total_wrapper {
+    display: flex;
+    align-items: center;
+    .sub_total_price {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #253d4e;
+      margin-right: 10px;
+      @include respond(sm) {
+        font-weight: 500;
+      }
+    }
+  }
+}
+.cart_card_container {
+  @include respond(sm) {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 15px;
+  }
+}
+.promise_wrapper {
+  display: flex;
+  column-gap: 10px;
+  margin-top: -10px;
+  margin-left: -10px;
+  @include respond(sm) {
+    padding-left: 10px;
+  }
+  .timing {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253d4e;
+  }
+  .delivery_charge {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253d4e;
+  }
+  .change_btn {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $theme-clr;
+    cursor: pointer;
+  }
+}
+.delivery_option_wrapper {
+  padding: 10px 0 10px 2%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  border-bottom: 1px solid #e2e2e2;
+  .text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .delivery_option_wrapper_text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .delivery_option_wrapper_action {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $theme-clr;
+    cursor: pointer;
+  }
+  .delivery_time_wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    .delivery_time {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #253d4e;
+    }
+
+    .delivery_charge {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #253d4e;
+    }
+  }
+  .delivery_address_change {
+    cursor: pointer;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #01c0cc;
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../commonStyles/colors.module.scss";
+@import "../../commonStyles/media-queries.module.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  // row-gap: 10px;
+  border-radius: 5px;
+  background-color: white;
+  // margin-top: 10px;
+  // min-width:257px;
+  .activity {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #253d4e;
+    opacity: 0.5;
+    padding-inline: 10px;
+  }
+  .menu_item {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    padding: 19px 27px;
+    display: flex;
+    column-gap: 20px;
+    border: 1px solid #ddd;
+    color: #585858;
+    @include respond(sm) {
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+  .log_out {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    padding: 19px 27px;
+    display: flex;
+    column-gap: 20px;
+        border: 1px solid #ddd;
+    @include respond(sm) {
+      position: fixed;
+      background-color: lightgray;
+      color: white;
+      border-radius: 2px;
+      bottom: 3%;
+      right: 5%;
+      width: 70%;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      cursor: pointer;
+      padding: 19px 27px;
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+    }
+  }
+  .active_menu {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    cursor: pointer;
+    padding: 19px 27px;
+    border-left: 2px solid $theme-clr;
+    background-color: #f5f5f5;
+    display: flex;
+    column-gap: 20px;
+    color: $theme-clr;
+  }
+}

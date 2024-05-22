@@ -1,0 +1,36 @@
+@import "../../commonStyles/media-queries.module.scss";
+.container {
+  width: 93%;
+  margin: auto;
+  .bread_crumb {
+    margin-top: 30px;
+    padding: 18px;
+    background-color: #fbfbfb;
+    .home_bread_crumb {
+      opacity: 1;
+      cursor: pointer;
+      &:hover {
+        color: black;
+      }
+    }
+    @include respond(sm) {
+      border: 0.2px solid #edebeb;
+    }
+  }
+  .page_heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 2% 0;
+    @include respond(sm) {
+      margin: 5% 0;
+      font-size: 20px;
+    }
+  }
+}
+.mobile_apps {
+  margin-top: 100px;
+}

@@ -1,0 +1,240 @@
+@import "../../commonStyles/media-queries.module.scss";
+.container {
+  width: 95%;
+  margin: 10px auto;
+  overflow-x: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 3px;
+  .top_heading {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #1a1a1a;
+    padding: 10px 0;
+  }
+  .content_container {
+    border: 1px solid black;
+  }
+  .brand_details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #000000;
+    .address_text_sold_by {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #000000;
+    }
+    .address_text {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #000000;
+    }
+  }
+  .invoice_det {
+    display: flex;
+    justify-content: space-between;
+    @include respond(sm) {
+      flex-direction: column;
+    }
+    div {
+      border: 1px solid black;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      @include respond(sm) {
+        text-align: left;
+      }
+    }
+  }
+  .address_det {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    @include respond(sm) {
+      flex-direction: column;
+    }
+    .address_det_left {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .address_det_right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      @include respond(sm) {
+        margin-top: 30px;
+      }
+    }
+    .title {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 9px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    .name {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0px;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    .address {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    .number {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+  .place {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid black;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+  .price_det {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    @include respond(sm) {
+      flex-direction: column;
+    }
+    .price_det_left {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      width: 100%;
+    }
+    .price_det_right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      width: 30%;
+      @include respond(sm) {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .price_det_right_row {
+        display: flex;
+        justify-content: space-between;
+        .price_det_heading {
+          color: #1a1a1a;
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 13px;
+          font-weight: 500;
+          //   line-height: 11px;
+          letter-spacing: 0px;
+          text-align: left;
+          padding-right: 10px;
+        }
+        .price_det_price {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 13px;
+          font-weight: 400;
+          //   line-height: 11px;
+          letter-spacing: 0px;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .total_amount {
+    display: flex;
+    justify-content: flex-end;
+    .total_ampunt_left {
+      display: flex;
+      width: 70%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    .total_ampunt_right {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      border: 1px solid black;
+      padding: 10px;
+      @include respond(sm) {
+        flex-direction: column;
+      }
+    }
+  }
+  .terms {
+    display: flex;
+    justify-content: space-between;
+    .terms_left {
+      padding: 10px;
+    }
+    .terms_right {
+      padding: 10px;
+      div {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center;
+  }
+}
+.download_btn {
+  display: flex;
+  width: 95%;
+  margin: 10px auto;
+  justify-content: flex-end;
+}
+.download {
+  cursor: pointer;
+  background-color: #01c0cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 2px;
+}
+.download:hover {
+  outline: 1.5px solid black;
+}

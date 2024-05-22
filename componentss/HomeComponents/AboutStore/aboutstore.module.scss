@@ -1,0 +1,138 @@
+.image_content {
+  height: 100% !important;
+  width: 100% !important;
+  max-width: fit-content;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15rem;
+  margin-bottom: 7rem;
+  position: relative;
+
+  span {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .img2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 1;
+  }
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 3.2em;
+}
+
+.text_content {
+  display: flex;
+  row-gap: 30px;
+  width: 55%;
+  padding: 2%;
+  color: white;
+
+  .heading {
+    width: 100%;
+    height: 100%;
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "arquitecta", Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 35.22px;
+      color: #000000;
+      margin-bottom: 16px;
+    }
+  }
+
+  .textarea {
+    max-width: fit-content;
+  }
+
+  .textarea p {
+    font-family: "arquitecta", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+
+    color: #000000;
+    text-align: justify; /* Align text to justify */
+    padding: 0 20px;
+  }
+
+  button {
+    width: fit-content;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .image_content {
+    // margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text_content {
+    margin: 6px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 0rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image_content,
+  .text_content {
+    width: 48%;
+    /* Adjust width as needed */
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image_content {
+    .img2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      left: 50%; // Change from "absolute" to "relative"
+      z-index: 3;
+    }
+  }
+}
